@@ -1,0 +1,19 @@
+
+
+.h1{
+
+    margin-top: 0;
+}
+
+.container{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.custom-logo{
+  max-width: 80%; /* Controla el ancho máximo de la imagen */
+  max-height: 80%; /* Controla la altura máxima de la imagen */
+  margin: 20px; /* Controla el espacio alrededor de la imagen */
+}
