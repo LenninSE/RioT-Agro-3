@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
+import { FirebaseService } from 'src/app/services/firebase.service';
+import { UtilsService } from 'src/app/services/utils.service';
+import { MenuController } from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +10,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePage implements OnInit {
 
-  constructor() { }
+  firbeseSvc = inject(FirebaseService);
+  utilSvc = inject(UtilsService);
+  // MenuController: any;
 
   ngOnInit() {
+  }
+
+  //===== cerrar sesion======//
+  // signOut(){
+  //   this.firbeseSvc.signOut();
+  // }
+
+
+  constructor(private menuCtrl: MenuController) {}
+  openMenu(){
+
+    this.menuCtrl.toggle();
+    
   }
 
 }

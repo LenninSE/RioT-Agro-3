@@ -25,6 +25,8 @@ export class UtilsService {
     toast.present();
   }
 
+
+  
   //---------Enruta a caulquier pagina disponoble----------------//
   routerLink(url: string) {
     return this.router.navigateByUrl(url)

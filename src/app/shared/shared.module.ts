@@ -8,11 +8,13 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 
 
+
 @NgModule({
   declarations: [
     HeaderComponent,
     CustomInputComponent,
     LogoComponent
+    
 
   ],
 
@@ -21,6 +23,7 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
     CustomInputComponent,
     ReactiveFormsModule,
     LogoComponent
+    
 
   ],
 
@@ -29,6 +32,7 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
     IonicModule,
     ReactiveFormsModule,
     FormsModule
+    
   ]
 })
 export class SharedModule { }
