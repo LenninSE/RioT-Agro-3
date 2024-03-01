@@ -3,7 +3,7 @@
   <ion-toolbar>
     <ion-toolbar color="primary" >
 
-      <ion-title slot="start"> Home</ion-title>
+      <ion-title slot="start"> Home RIoT</ion-title>
 
       <ion-buttons slot="end" >
         
@@ -24,6 +24,51 @@
 <!-- =============== contenido ================ -->
 <ion-content>
 
+  <!-- <img src="assets/fondo home 1.jpg" alt="imagen estatica home"> -->
+
+<!-- <ion-img src="assets/fondo home 1.jpg" class="img-home"></ion-img> -->
+
+<div class="video-container">
+  <video autoplay loop muted class="video">
+    <source src="assets/videoHome.mp4" type="video/mp4" >
+  </video>
+</div>
+
+
+<div>
+  <ion-item lines="full" class="larger-item"  routerLink="../info-tomate" >
+
+    <ion-avatar slot="start" class="avatar-large">
+      <img alt="Solanum lycopersicum" src="assets/pictures/tomatePerfil1.jpg" />
+    </ion-avatar>
+    <ion-label><b>Solanum lycopersicum </b> <br> Tomate</ion-label>
+    <ion-icon slot="end" name="chevron-forward"></ion-icon>
+   
+  </ion-item>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   <!-- ========Nuevo Producto========= -->
@@ -31,6 +76,12 @@
     <ion-fab-button>
       <ion-icon name="add"></ion-icon>
     </ion-fab-button>
+
+    <ion-fab-list side="top">
+      <ion-fab-button><ion-icon name="extension-puzzle-outline" color="danger"></ion-icon></ion-fab-button>
+      <ion-fab-button><ion-icon name="calendar-outline" color="success"></ion-icon></ion-fab-button>
+    </ion-fab-list>
+
   </ion-fab>
 
 </ion-content>

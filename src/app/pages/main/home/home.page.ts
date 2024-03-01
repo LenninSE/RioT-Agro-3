@@ -1,7 +1,8 @@
 import { Component, OnInit, inject } from '@angular/core';
 import { FirebaseService } from 'src/app/services/firebase.service';
 import { UtilsService } from 'src/app/services/utils.service';
-import { MenuController } from '@ionic/angular';
+import { MenuController, NavController } from '@ionic/angular';
+
 
 @Component({
   selector: 'app-home',
@@ -23,11 +24,20 @@ export class HomePage implements OnInit {
   // }
 
 
-  constructor(private menuCtrl: MenuController) {}
+  constructor(private menuCtrl: MenuController, private navCtrl: NavController) {}
   openMenu(){
 
     this.menuCtrl.toggle();
     
   }
+
+  
+
+  // openInfo(){
+    
+  //   this.navCtrl.navigateForward('')
+
+  // }
+  
 
 }

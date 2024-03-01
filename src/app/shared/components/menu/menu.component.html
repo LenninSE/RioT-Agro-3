@@ -8,10 +8,36 @@
   <ion-content>
     <ion-list>
 
+
+      <!-- perfil -->
+      <ion-item>
+        <ion-icon  name="person-circle-outline" color="primary"></ion-icon>
+        <ion-label>Perfil</ion-label>
+      </ion-item>
+
+      <!-- configuracion -->
+      <ion-item>
+        <ion-icon  name="settings-outline" color="primary"></ion-icon>
+        <ion-label>Configuración</ion-label>
+      </ion-item>
+
+      <!-- Ayuda -->
+      <ion-item>
+        <ion-icon  name="help" color="primary"></ion-icon>
+        <ion-label> Ayuda</ion-label>
+      </ion-item>
+      <!-- aACerca de... -->
+      <ion-item>
+        <ion-icon  name="information-circle-outline" color="primary"></ion-icon>
+        <ion-label> acerca de</ion-label>
+      </ion-item>
+
+      <!-- Cerrar sesion -->
       <ion-item  (click)="signOut()" >
         <ion-icon  name="log-out" color="danger"></ion-icon>
         <ion-label color="danger">Cerrar sesión</ion-label>
       </ion-item>
+
 
     </ion-list>
   </ion-content>

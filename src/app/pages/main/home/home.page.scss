@@ -1,0 +1,38 @@
+.img-home {
+    width: 100%;
+    height: auto;
+}
+
+.video-container {
+    width: 100%;
+    /* Puedes ajustar este valor según tus necesidades */
+    margin: 0 auto;
+    /* Centra el contenedor horizontalmente */
+}
+
+.video {
+    width: 100%;
+    /* Establece el ancho del video al 100% del contenedor */
+    height: auto;
+    /* Esto permite que la altura del video se ajuste automáticamente para mantener la proporción */
+}
+
+//avatar tomate grande//
+.avatar-large {
+    --border-radius: 20%; /* Hace que el ion-avatar sea circular */
+    width: 85px; /* Tamaño personalizado del ion-avatar */
+    height: 85px; /* Tamaño personalizado del ion-avatar */
+  }
+
+//==subtexto==//
+.subtext {
+    font-size: 12px; /* Tamaño del subtexto */
+    color: #999; /* Color del subtexto */
+  }
+
+
+
+//distancia del div
+  .larger-item {
+    --min-height: 80px; /* Altura mínima del ion-item */
+  }
